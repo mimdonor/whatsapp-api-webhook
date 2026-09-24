@@ -36,6 +36,11 @@ app.get('/test', (req, res) => {
   res.status(200).end();
 });
 
+// Open this URL to check whether deployment works.
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`\nListening on port ${port}\n`);
