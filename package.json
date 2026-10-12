@@ -2,10 +2,13 @@
   "name": "meta-webhook",
   "version": "1.0.0",
   "private": true,
+  "main": "app.js",
   "type": "commonjs",
   "scripts": {
     "start": "node app.js"
   },
+  "author": "Mission India Movement",
+  "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
   }
